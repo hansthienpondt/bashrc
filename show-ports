@@ -1,0 +1,1 @@
+alias show-ports="docker ps --format json | jq -rsc '[.[] | { Names: .Names, Ports: [(.Ports | scan(\"0.0.0.0:[0-9]*->[0-9]*\") | scan(\"[0-9]*->[0-9]*\"))]} | select((.Ports | length) > 0)] | sort_by(.Names) | [\"Name\", \"Forwarded Ports\"], (.[] | [.Names, (.Ports | join(\", \"))]) | @tsv' | column -t -s $'	' | sed 's/->/ -> /g'"
