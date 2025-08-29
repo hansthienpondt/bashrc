@@ -1,0 +1,35 @@
+{
+    "settings": {
+        "files.associations": {
+            "/Artifacts/*": "yaml",
+            "/Artifact Bundles/*": "zip",
+            "/*_v*/views/*": "json"
+        },
+        "json.schemas": [
+            {
+                "fileMatch": [
+                    "*.viewConfig"
+                ],
+                "schema": false,
+                "url": "file:///home/nokia/.local/share/code-server/extensions/nokia.nokia-intent-manager-4.0.4/media/viewconfig-schema.json"
+            }
+        ]
+    },
+    "folders": [
+        {
+            "name": "Artifact Adminstrator",
+            "uri": "artifactadminstrator:/"
+        },
+        {
+            "name": "Intent Manager",
+            "uri": "im:/"
+        },
+        {
+            "name": "Workflow Manager",
+            "uri": "wfm:/"
+        },
+        {
+            "path": "../../../../.."
+        }
+    ]
+}
