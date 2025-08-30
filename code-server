@@ -29,7 +29,8 @@
             "uri": "wfm:/"
         },
         {
-            "path": "../../../../.."
+            "name": "Home",
+            "path": "/home/nokia"
         }
     ]
 }
